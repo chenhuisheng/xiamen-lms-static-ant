@@ -1,0 +1,141 @@
+.app-loading-container {
+  flex: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 80px;
+}
+
+.loading-container {
+  min-height: 80px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.page-empty-container {
+  flex: 1;
+  padding-top: 50px;
+  color: @text-color;
+  font-size: 16px;
+  text-align: center;
+  .title {
+    margin-bottom: 10px;
+    font-size: 20px;
+    color: @heading-color;
+  }
+  .desc {}
+}
+
+.topic-tabs-container {
+  margin-bottom: 16px;
+}
+
+.book-thumb-item {
+  display: flex;
+  .thumb {
+    margin-right: 10px;
+    img {
+      width: 60px;
+      height: auto;
+      background-color: #ccc;
+    }
+  }
+  .content {
+    .title {
+      margin-bottom: 8px;
+      font-size: 15px;
+      color: @heading-color;
+    }
+    .desc {
+      margin-bottom: 4px;
+      font-size: 13px;
+    }
+  }
+}
+
+.image-card-item {
+  cursor: pointer;
+
+  .ant-card-body {
+    padding: 8px 10px;
+  }
+  .ant-card-meta {
+    margin: 0;
+  }
+  .card-footer {
+    display: flex;
+    align-items: center;
+    margin-top: 8px;
+    .time {
+      flex: auto;
+      color: @text-color-secondary;
+      font-size: 13px;
+    }
+    .actions {
+      a {
+        margin-left: 10px;
+      }
+    }
+  }
+
+  // check state
+  .checkbox-label {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    width: 0;
+    height: 0;
+    border-width: 16px;
+    border-style: solid;
+    border-color: transparent @primary-color @primary-color transparent;
+    &::after {
+      content: ' ';
+      display: inline-block;
+      width: 8px;
+      height: 14px;
+      border-width: 1px;
+      border-style: solid;
+      border-color: transparent #fff #fff transparent;
+      transform: translate(2px, -4px) rotate(45deg);
+    }
+  }
+  &--checked {
+    border-color: @primary-color;
+  }
+}
+
+.swipe-image-list {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  margin-left: -16px;
+  .image-card-item {
+    flex: 0 0 auto;
+  }
+  .drag-image-card-item {
+    margin-left: 16px;
+    margin-bottom: 24px;
+  }
+}
+
+.image-card-list {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  margin-left: -16px;
+  .image-card-item {
+    flex: 0 0 auto;
+    margin-left: 16px;
+    margin-bottom: 24px;
+  }
+}
+
+.AlignLeft {
+  float: left
+}
+
+.AlignRight {
+  float: right
+}

@@ -1,0 +1,47 @@
+{
+  "name": "xiamen-lms-static-ant",
+  "version": "0.1.0",
+  "private": true,
+  "homepage": "http://dev.xiamen.chaoxingbook.com/admin",
+  "dependencies": {
+    "@reach/router": "^1.2.1",
+    "antd": "^3.11.6",
+    "axios": "^0.18.0",
+    "classnames": "^2.2.6",
+    "debug": "^4.1.0",
+    "es6-shim": "^0.35.4",
+    "eventemitter3": "^3.1.0",
+    "lodash": "^4.17.11",
+    "mobx": "^5.5.2",
+    "mobx-react": "^5.3.6",
+    "mobx-react-devtools": "^6.0.3",
+    "moment": "^2.22.2",
+    "react": "^16.6.0",
+    "react-dnd": "^5.0.0",
+    "react-dnd-html5-backend": "^5.0.1",
+    "react-dom": "^16.6.0",
+    "react-scripts-ts-antd": "2.17.0",
+    "viser-react": "^2.4.5"
+  },
+  "scripts": {
+    "start": "react-scripts-ts-antd start",
+    "build": "react-scripts-ts-antd build",
+    "test": "react-scripts-ts-antd test --env=jsdom",
+    "eject": "react-scripts-ts-antd eject",
+    "lint": "node node_modules/tslint/bin/tslint -p tsconfig.json --fix"
+  },
+  "devDependencies": {
+    "@types/classnames": "^2.2.6",
+    "@types/jest": "^23.3.9",
+    "@types/lodash": "^4.14.117",
+    "@types/node": "^10.12.2",
+    "@types/reach__router": "^1.2.3",
+    "@types/react": "^16.8.3",
+    "@types/react-dom": "^16.0.9",
+    "typescript": "^3.1.6"
+  },
+  "resolutions": {
+    "@types/react": "^16.8.3"
+  },
+  "proxy": "http://dev.xiamen.chaoxingbook.com"
+}

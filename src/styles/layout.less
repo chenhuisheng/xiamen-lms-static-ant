@@ -1,0 +1,143 @@
+@bg-color: @layout-body-background;
+
+html,
+body,
+#root,
+.App {
+  height: 100%;
+}
+.App > div:first-child {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.app-default-layout {
+  min-height: 100vh;
+  background: @bg-color;
+}
+
+.app-header {
+  display: flex;
+  padding: 0 20px;
+  background-color: #fff;
+  color: @text-color;
+  border-bottom: 1px solid @border-color-split;
+  a {
+    color: @text-color;
+  }
+  .title {
+    flex: auto;
+    font-size: 18px;
+  }
+  .actions {
+    display: flex;
+    a {
+      margin-left: 2em;
+    }
+  }
+}
+
+.app-sider {
+  background-color: @bg-color;
+  .ant-layout-sider-children {
+    display: flex;
+    flex-direction: column;
+  }
+  .antd-pro-components-sider-menu-logo {
+    padding-left: 10px;
+    height: 64px;
+    line-height: 64px;
+    background: @primary-color;
+    color: #fff;
+    overflow: hidden;
+    font-size: 20px;
+    display: flex;
+    align-items: center;
+  }
+}
+.app-nav-menu {
+  flex: auto;
+  padding: 16px 0;
+  .ant-menu-item,
+  .ant-menu-submenu-title {
+    padding-left: 24px;
+  }
+}
+.app-route-container {
+  > div {
+    display: flex;
+    flex-direction: column;
+    flex: auto;
+  }
+}
+
+.app-main {
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+
+  .page-header {
+    display: flex;
+    align-items: center;
+    padding: 0 20px;
+    height: 60px;
+    background-color: #fff;
+    border-bottom: 1px solid @border-color-base;
+  }
+
+  .page-content {
+    flex: auto;
+    display: flex;
+    flex-direction: column;
+    margin: 16px;
+    padding: 16px;
+    border-radius: 4px;
+    background-color: #fff;
+    overflow: hidden;
+  }
+
+  .page-search-container {
+    margin-bottom: 16px;
+    .ant-form-item {
+      margin-bottom: 10px;
+    }
+    .ant-form-item-control {
+      min-width: 170px;
+    }
+  }
+
+  .search-form {
+    text-align: right;
+  }
+
+  .button-search {
+    float: left;
+  }
+
+  .page-toolbar-container {
+    margin-bottom: 16px;
+  }
+}
+
+.page-search-container {
+  margin-bottom: 16px;
+  .ant-form-item {
+    margin-bottom: 10px;
+  }
+  .ant-form-item-control {
+    min-width: 170px;
+  }
+}
+
+.page-toolbar-container {
+  display: flex;
+  align-items: center;
+  margin-bottom: 16px;
+  button {
+    margin-left: 8px;
+    &:first-child {
+      margin-left: 0;
+    }
+  }
+}

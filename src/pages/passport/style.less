@@ -1,0 +1,43 @@
+@import "../../styles/var";
+
+.page-passport {
+  height: 100vh;
+  background-image: url(https://gw.alipayobjects.com/zos/rmsportal/TVYTbAXWheQpRcWDaDMu.svg);
+  background-repeat: no-repeat;
+  background-position: center 110px;
+  background-color: #f0f2f5;
+  background-size: 100%;
+
+  &.login-page {
+    .page-container {
+      margin: 0 auto;
+      padding-top: 20vh;
+      width: 350px;
+    }
+    .logo {
+      margin-bottom: 16px;
+      text-align: center;
+      img {
+        display: inline-block;
+      }
+    }
+    .title {
+      margin-bottom: 40px;
+      font-size: 24px;
+      text-align: center;
+      color: #556;
+    }
+    .error-message {
+      margin: 24px 0;
+    }
+    .login-form {
+      .captcha-group {
+        display: flex;
+      }
+      .captcha-group-input {
+        flex: 1;
+        margin-right: 12px;
+      }
+    }
+  }
+}
